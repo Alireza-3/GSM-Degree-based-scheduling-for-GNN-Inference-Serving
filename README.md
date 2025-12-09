@@ -17,7 +17,7 @@ This repository accompanies the paper in `Degree-Based Scheduling and Memory Man
   ```
 
 ## Build DGL from source
-- Install build prerequisites per the DGL docs (CMake, a C++ toolchain, Python, PyTorch, and optionally CUDA/CUDNN).
+- Install build prerequisites per the DGL docs (CMake, a C++ toolchain, Python, PyTorch, and CUDA/CUDNN).
 - From the DGL repo:
   ```bash
   cd "$DGL_ROOT"
