@@ -17,6 +17,13 @@ This repository accompanies the paper in `Degree-Based Scheduling and Memory Man
   ```
 
 ## Build DGL from source
+The repository includes custom CUDA extensions for DGL to optimize:
+
+- Memory pinning
+- Array operations
+- Neighborhood sampling
+- Index selection
+
 - Install build prerequisites per the DGL docs (CMake, a C++ toolchain, Python, PyTorch, and CUDA/CUDNN).
 - From the DGL repo:
   ```bash
@@ -34,6 +41,16 @@ Once built and installed, use the patched DGL in your experiments; all scripts i
 - From the repo root, run the `find_*` scripts first, then the `lin_*` scripts, and then the `*_load.py` scripts; these prepare and load results before diving into specific experiments.
 - After those complete, enter the subdirectories (e.g., `ablation_study`, `e2e`, `experimental_analysis`, `overhead`, `sensitivity_analysis`, etc.) to run the experiments reported in the paper.
 
+## Repository Structure
+
+- `e2e/`: End-to-end implementation of various models and experiments
+- `ablation_study/`: Contains code for ablation studies on different components
+- `DGL modifications/`: Custom CUDA extensions for DGL
+- `dataset preprocessing/`: Tools for preprocessing graph datasets
+- `experimental_analysis/`: Code for analyzing experimental results
+- `sensitivity_analysis/`: Tools for sensitivity analysis of different parameters
+- `overhead/`: Code for measuring performance overhead
+  
 ## Script naming quick guide
 - `_B`: baseline
 - `_P`: proposed method (GSM)
