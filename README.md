@@ -39,3 +39,5 @@ Once built and installed, use the patched DGL in your experiments; all scripts i
 - `_P`: proposed method (GSM)
 - `_O`: full knowledge scheduler
 - `_M`, `_S`: ablations from the paper
+- `FR`: Friendster dataset
+- `PA`: Papers100M dataset
